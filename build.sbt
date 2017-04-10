@@ -6,13 +6,13 @@ scalaVersion := "2.11.8"
 
 version := "git describe --tags --dirty --always".!!.stripPrefix("v").trim
 
-sbtPlugin := true
-
 scalacOptions ++= List("-unchecked")
 
-publishMavenStyle := false
-
 licenses += ("Unlicense", url("http://unlicense.org/"))
+
+publishMavenStyle := false
+organization := "com.github.retnuh"
+bintrayRepository := "TokenFSM"
 
 resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
