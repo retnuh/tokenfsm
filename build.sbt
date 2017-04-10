@@ -11,7 +11,7 @@ sbtPlugin := true
 scalacOptions ++= List("-unchecked")
 
 publishMavenStyle := false
-bintrayRepository := "sbt-plugins"
+
 licenses += ("Unlicense", url("http://unlicense.org/"))
 
 resolvers ++= Seq(
